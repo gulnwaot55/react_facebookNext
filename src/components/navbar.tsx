@@ -41,7 +41,6 @@ const Navbar: React.FC = () => {
               placeholder="ค้นหาบน Facebook :"
               required
             />
-           
           </div>
 
           {/* <input
@@ -78,7 +77,7 @@ const Navbar: React.FC = () => {
               href="Marketplace"
               id="market"
             >
-              <div className=" rounded-full w-10 h-10">
+              <div className=" rounded-full w-10 h-10 bg">
                 <img src="/assets/images/marketplace.png" />
               </div>{" "}
             </a>{" "}
