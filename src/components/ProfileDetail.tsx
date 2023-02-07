@@ -1,6 +1,6 @@
 import ProfileUser from "@/layouts/ProfileUser";
 import React from "react";
-
+import ProfileDetails from "./ProfileDetailMore";
 
 
 export default function ProfileDetail() {
@@ -9,6 +9,7 @@ export default function ProfileDetail() {
       {profileDetail.map((data) => {
         return <ProfileUser name={data.name} img={data.img} />;
       })}
+      <ProfileDetails />
     </div>
   );
 }
@@ -32,16 +33,19 @@ const profileDetail = [
       },
       {
         name: "ล่าสุด",
-        img: "/assets/images/friend.png",
+        img: "/assets/images/lastview.png",
       },
       {
         name: "Marketplace",
         img: "/assets/images/marketplace.png",
       },
       {
-        name: "Marketplace",
-        img: "/assets/images/marketplace.png",
+        name: "ดูเพิ่มเติม",
+        img: "/assets/images/down_arrow.png",
       },
-    
+
     
   ];
+  
+
+
