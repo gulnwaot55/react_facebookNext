@@ -132,7 +132,7 @@ const Navbar: React.FC = () => {
             </button>
           </li>
           <div className="avatar w-10 h-10 pt-1 pl-1">
-            <div className=" rounded-full">
+            <div className=" rounded-full ">
               <img src="https://i.pinimg.com/originals/7a/c0/d7/7ac0d71511e4fc3b7be553319e794749.jpg" />
             </div>
           </div>

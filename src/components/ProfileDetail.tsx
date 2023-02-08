@@ -14,12 +14,12 @@ export default function ProfileDetail() {
   const [isToggleds, setItToggleds] = useState(false);
 
   return (
-    <div className="ggrid grid-flow-col auto-cols-max ">
+    <div className="grid-flow-col auto-cols-max ">
       {profileDetail.map((data) => {
         return <ProfileUser name={data.name} img={data.img} />;
       })}
       <div onClick={() => setItToggled(!isToggled)}>{isToggled == true ? <ProfileDetailHide /> : <ProfileDetails />}</div>
-      <div className="border-b-2 border-gray-500">
+      <div className="border-b-2 border-gray-500 ">
       </div>
       <div>ทางลัดของคุณ</div>
       <ShotcutProfile />
@@ -53,7 +53,6 @@ const profileDetail = [
     name: "Marketplace",
     img: "/assets/images/marketplace.png",
   },
-
 
 ];
 
