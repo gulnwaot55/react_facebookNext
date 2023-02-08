@@ -28,7 +28,6 @@ export default function HomePage() {
           </div>
         </div>
       </div>
-      <div className="col-span-1 pl-10">Page</div>
     </>
   );
 }
