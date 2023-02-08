@@ -10,19 +10,26 @@ export default function HomePage() {
   const Text = () => <div>You clicked the button!</div>;
   return (
     <>
-      <div className=" grid grid-cols-4 p-10 bg-zinc-200 h-screen  w-full">
+      <div className=" grid grid-cols-4 p-10 bg-zinc-100 h-screen  w-full">
         <ProfileDetail />
         <div className="  col-span-2  ">
-          <div className=" opacity-95 rounded-lg col-span-2 mx-10 bg-slate-100">
+          <div className=" opacity-95 rounded-lg col-span-2 mx-10 bg-white">
             <TabsMenuBar />
             <StoryCardView />
           </div>
-          <div className="grid grid-rows-3">
-            <div className=" opacity-95 rounded-lg col-span-2 mx-10 bg-slate-100 mt-4 ">
-              <div className="avatar m-4">
-                <div className="w-10 h-10 rounded-full">
+          <div className=" opacity-95 rounded-lg col-span-2 mx-10 my-6 bg-white">
+            <div className=" grid grid-cols-5">
+              <div className="avatar mx-10 my-6 col-span-1 ">
+                <div className="w-10 rounded-full">
                   <img src="https://i.pinimg.com/originals/7a/64/32/7a643277f65fb3f7d544b0e2bfae8abc.jpg" />
                 </div>
+              </div>
+              <div className=" col-span-2 content-center  mt-4">
+                <input
+                  type="text"
+                  placeholder="Type here"
+                  className="input input-bordered input-md w-full max-w-xs"
+                />
               </div>
             </div>
           </div>

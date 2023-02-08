@@ -15,10 +15,14 @@ export default function StoryCardView() {
       name: "Name3",
       img: "https://i.pinimg.com/originals/c0/b7/aa/c0b7aa2bad38cb46700afa496a70f72c.jpg",
     },
+    {
+      name: "Name3",
+      img: "https://i.pinimg.com/originals/c0/b7/aa/c0b7aa2bad38cb46700afa496a70f72c.jpg",
+    },
   ];
 
   return (
-    <div className="grid grid-cols-3">
+    <div className="grid grid-cols-4">
       {dataList.map((data) => {
         return <CardImg name={data.name} img={data.img} />;
       })}
