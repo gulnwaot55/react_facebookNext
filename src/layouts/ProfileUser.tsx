@@ -24,3 +24,5 @@ export default function ProfileUser({ name, img }: Props) {
     </div>
   );
 }
+
+

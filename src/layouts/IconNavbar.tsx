@@ -1,7 +1,8 @@
 import React from "react";
 import SearchInput from "./SearchInput";
-import { iconNavEnd, imgIcon, UserProfile } from "@/models/Constant";
 import AvatarImg from "./AvatarImg";
+import { imgIcon, iconNavEnd } from "@/models/Constant/NavbarImageIcons";
+import { UserProfile } from "@/models/Constant/ProfileDetailData";
 
 export default function IconNavbar() {
   return (
