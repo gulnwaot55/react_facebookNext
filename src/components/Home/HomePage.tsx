@@ -10,7 +10,7 @@ export default function HomePage() {
   const Text = () => <div>You clicked the button!</div>;
   return (
     <>
-      <div className=" grid grid-cols-4 p-10 bg-zinc-100 h-screen  w-full">
+      <div className=" grid grid-cols-4 p-10   w-full">
         <ProfileDetail />
         <div className="  col-span-2  ">
           <div className=" opacity-95 rounded-lg col-span-2 mx-10 bg-white">

@@ -20,7 +20,7 @@ export default function ProfileDetail() {
         return <ProfileUser name={data.name} img={data.img} />;
       })}
       <div onClick={() => setItToggled(!isToggled)}>{isToggled == true ? <ProfileDetailHide /> : <ProfileDetails />}</div>
-      <div className="border-b-2 border-gray-500">
+      <div className="border-b-2 border-gray-500 ">
       </div>
       <div>ทางลัดของคุณ</div>
       <ShotcutProfile />
