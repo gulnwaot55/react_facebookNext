@@ -2,8 +2,8 @@ import React from "react";
 
 export default function SearchInput() {
   return (
-    <div className="relative  m-2  w-full ">
-      <div className="absolute inset-y- left-1 flex items-center  p-3 pointer-events-none">
+    <div className="relative  w-full px-2">
+      <div className="absolute inset-y-left-1 flex items-center  p-3 pointer-events-none">
         <svg
           aria-hidden="true"
           className="w-5 h-5 text-gray-500 dark:text-gray-400"
@@ -23,7 +23,7 @@ export default function SearchInput() {
       <input
         type="search"
         id="search"
-        className="block w-full p-5 pl-10 text-sm text-gray-900 border rounded-full bg-gray-200  h-2   "
+        className="block w-full p-5 pl-10 text-sm text-gray-900 border rounded-full bg-gray-100  h-2   "
         placeholder="ค้นหาบน Facebook :"
         required
       />

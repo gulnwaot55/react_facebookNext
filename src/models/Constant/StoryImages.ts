@@ -1,8 +1,4 @@
-import React from "react";
-import CardImg from "@/layouts/CardImg";
-
-export default function StoryCardView() {
-  const dataList = [
+export const dataList = [
     {
       name: "Name1",
       img: "https://i.pinimg.com/originals/7a/c0/d7/7ac0d71511e4fc3b7be553319e794749.jpg",
@@ -20,12 +16,3 @@ export default function StoryCardView() {
       img: "https://i.pinimg.com/originals/c0/b7/aa/c0b7aa2bad38cb46700afa496a70f72c.jpg",
     },
   ];
-
-  return (
-    <div className="grid grid-cols-4">
-      {dataList.map((data) => {
-        return <CardImg name={data.name} img={data.img} />;
-      })}
-    </div>
-  );
-}
