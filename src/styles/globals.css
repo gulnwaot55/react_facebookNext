@@ -169,3 +169,22 @@ nav ul li #btn_profile::after {
         --btn-width-100: 60px;
     }
 }
+
+.fab-container{
+
+    position:fixed;
+    
+    bottom:50px;
+    
+    right:50px;
+    
+    cursor:pointer;
+    
+}
+
+.ex1 {
+    width: 40%;
+    height: 80%;
+    overflow: auto;
+    
+}

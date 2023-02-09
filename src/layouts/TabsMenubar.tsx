@@ -6,7 +6,7 @@ interface Props {
   img: string;
 }
 export default function TabsMenuBar({ name, img }: Props) {
-  return (    <div className="flex flex-row hover:bg-slate-100 hover:rounded-lg py-4 px-1 items-center">
+  return (<div className="flex flex-row hover:bg-slate-100 hover:rounded-lg py-4 px-1 items-center">
       <Image
         className=" w-6 h-6 rounded-md object-cover"
         height={80}

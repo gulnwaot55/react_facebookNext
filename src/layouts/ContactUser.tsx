@@ -8,9 +8,9 @@ interface Props {
 
 export default function ContactUser({ name, img }: Props) {
   return (
-    <div className="hover:bg-stone-200 hover:rounded-lg py-1 px-1 w-full flex ">
+    <div className="hover:bg-stone-200 hover:rounded-lg py-1 px-1 w-full flex m-1">
       <div className="avatar online ">
-        <div className="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+        <div className="w-12 rounded-full ring ring-blue-500 ring-offset-base-100 ring-offset-2">
           <img src={img} />
         </div>
       </div>

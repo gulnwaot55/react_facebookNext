@@ -9,4 +9,56 @@ export const shotcutProfileAll = [
         name: "Photoshop Community",
         img: "/assets/images/photoshop.png",
     },
+    {
+        name: "Photoshop Community",
+        img: "/assets/images/photoshop.png",
+    },
+    {
+        name: "Photoshop Community",
+        img: "/assets/images/photoshop.png",
+    },
+    {
+        name: "Photoshop Community",
+        img: "/assets/images/photoshop.png",
+    },
+    {
+        name: "Photoshop Community",
+        img: "/assets/images/photoshop.png",
+    },
+    {
+        name: "Photoshop Community",
+        img: "/assets/images/photoshop.png",
+    },
+    {
+        name: "Photoshop Community",
+        img: "/assets/images/photoshop.png",
+    },
+    {
+        name: "Photoshop Community",
+        img: "/assets/images/photoshop.png",
+    },
+    {
+        name: "Photoshop Community",
+        img: "/assets/images/photoshop.png",
+    },
+    {
+        name: "Photoshop Community",
+        img: "/assets/images/photoshop.png",
+    },
+    {
+        name: "Photoshop Community",
+        img: "/assets/images/photoshop.png",
+    },
+    {
+        name: "Photoshop Community",
+        img: "/assets/images/photoshop.png",
+    },
+    {
+        name: "Photoshop Community",
+        img: "/assets/images/photoshop.png",
+    },
+    {
+        name: "Photoshop Community",
+        img: "/assets/images/photoshop.png",
+    },
 ];
