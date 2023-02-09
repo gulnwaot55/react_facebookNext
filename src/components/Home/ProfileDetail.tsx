@@ -18,11 +18,12 @@ export default function ProfileDetail() {
 
 
   return (
-    <div className="grid  grid-flow-row auto-cols-max content-start ex1">
+    <div className="grid  grid-flow-row auto-cols-max content-start  ">
+      <div className="hover:overflow-y-auto h-[80rem]"> *//Scroll Bar Profiles
       {profileDetail.map((data) => {
         return <ProfileUser name={data.name} img={data.img} />;
       })}
-      <div className="grid w-full">
+      <div className="grid w-full ">
         {isShow == true && <ProfileDetailAll />}
       </div>
       <div className="grid w-full">
@@ -38,6 +39,7 @@ export default function ProfileDetail() {
       </div>
       <div onClick={() => setItToggleds(!isToggleds)}>
         {isToggleds == false ? <ProfileDetails /> : <ShotcutProfileHide />}
+      </div>
       </div>
     </div>
   );
