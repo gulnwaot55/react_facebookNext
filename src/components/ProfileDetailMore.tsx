@@ -10,6 +10,7 @@ export default function ProfileDetails() {
             {profileDetails.map((data) => {
                 return <ProfileUser name={data.name} img={data.img} />;
             })}
+            
         </div>
     );
 }

@@ -181,3 +181,10 @@ nav ul li #btn_profile::after {
     cursor:pointer;
     
 }
+
+.ex1 {
+    width: 40%;
+    height: 80%;
+    overflow: auto;
+    
+}
