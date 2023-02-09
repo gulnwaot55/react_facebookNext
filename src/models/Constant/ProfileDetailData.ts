@@ -23,10 +23,6 @@ export const profileDetail = [
         name: "Marketplace",
         img: "/assets/images/marketplace.png",
     },
-    {
-        name: "ดูเพิ่มเติม",
-        img: "/assets/images/down_arrow.png",
-    },
 
 
 ];

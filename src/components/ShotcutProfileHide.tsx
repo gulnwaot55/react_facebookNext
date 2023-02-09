@@ -16,19 +16,9 @@ export default function ShotcutProfileHide() {
 
 const shotcutProfileHide = [
     {
-        name: "TikTok Community",
-        img: "/assets/images/tiktok.png",
-    },    {
-        name: "Telegram Community",
-        img: "/assets/images/telegram.png",
-    },    {
-        name: "Photoshop Community",
-        img: "/assets/images/photoshop.png",
-    },
-    {
         name: "ดูน้อยลง",
         img: "/assets/images/up_arrow.png",
-    },
+    },   
 ];
 
 

@@ -3,9 +3,10 @@ import ProfileDetail from "./ProfileDetail";
 import { tebsMenu, tebsMenuPost } from "@/models/Constant/TabsMene";
 import CardImg from "@/layouts/CardImg";
 import { dataList } from "@/models/Constant/StoryImages";
-import AvatarImg from "@/layouts/AvatarImg";
 import { UserProfile } from "@/models/Constant/ProfileDetailData";
 import TabsMenuBar from "@/layouts/TabsMenubar";
+import AvatarImg from "@/layouts/AvatarImg";
+import ContactDetail from "../ContactDetail";
 
 export default function HomePage() {
   const [showText, setShowText] = useState(false);
@@ -13,8 +14,8 @@ export default function HomePage() {
   const Text = () => <div>You clicked the button!</div>;
   return (
     <>
-      <div className="flex bg-zinc-100  ">
-        <div className="flex grow basis-1/4  flex-row   items-center ml-4 mx-10 p-10 ">
+      <div className="flex ">
+        <div className="flex grow basis-1/4  flex-row   items-start ml-4 mx-10 p-10 ">
           <ProfileDetail />
         </div>
         <div className="flex grow flex-col basis-1/3  rounded-lg my-6 mx-10  drop-shadow-lg">
@@ -65,7 +66,9 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-        <div className="flex grow basis-1/4 flex-col  justify-end   items-center "></div>
+        <div className="flex grow basis-1/4 flex-col  justify-start   items-center ">
+          <ContactDetail />
+        </div>
       </div>
     </>
   );
