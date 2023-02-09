@@ -6,7 +6,7 @@ import { dataList } from "@/models/Constant/StoryImages";
 import { UserProfile } from "@/models/Constant/ProfileDetailData";
 import TabsMenuBar from "@/layouts/TabsMenubar";
 import AvatarImg from "@/layouts/AvatarImg";
-import ContactDetail from "../ContactDetail";
+import ContactDetail from "./ContactDetail";
 import CarouselCardStory from "./CarouselCardStory";
 
 export default function HomePage() {

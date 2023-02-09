@@ -31,7 +31,7 @@ export default function ProfileDetail() {
           </div>
       </div>
       <div className="border-b-2 border-gray-500"></div>
-      <div>ทางลัดของคุณ</div>
+      <div className="p-2">ทางลัดของคุณ</div>
       <ShotcutProfile />
       <div className="grid w-full">
         {isToggleds == true && <ShotcutProfileAll />}
