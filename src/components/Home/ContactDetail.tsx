@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { contactAll } from "@/models/Constant/ContactAll";
 import ContactUser from "@/layouts/ContactUser";
+import { contactGroup } from "@/models/Constant/ContactGroup";
 
 export default function ContactDetail() {
 
@@ -27,6 +28,22 @@ export default function ContactDetail() {
             {contactAll.map((data) => {
                 return <ContactUser name={data.name} img={data.img} />;
             })}
+            <div className="border-b-2 border-gray-500 p-2"></div>
+            <div className="p-2">การสนทนากลุ่ม</div>
+            {contactGroup.map((data) => {
+                return <ContactUser name={data.name} img={data.img} />;
+            })}
+            <div className="hover:bg-stone-200 hover:rounded-lg py-1 px-1 w-full flex m-1 ">
+
+                <div className=" rounded-full h-14 w-14  p-4  bg-gray-200">
+                    <img src="/assets/images/add.png" />
+                </div>
+
+                <h1 className="flex text-black pl-4 py-2 font-medium items-center justify-center ">
+                    {" "}
+                    สร้างกลุ่มใหม่
+                </h1>
+            </div>
         </div>
     );
 }

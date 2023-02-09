@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import ProfileDetail from "./ProfileDetail";
 import { tebsMenu, tebsMenuPost } from "@/models/Constant/TabsMene";
-import CardImg from "@/layouts/CardImg";
 import { dataList } from "@/models/Constant/StoryImages";
 import { UserProfile } from "@/models/Constant/ProfileDetailData";
 import TabsMenuBar from "@/layouts/TabsMenubar";
@@ -10,9 +9,7 @@ import ContactDetail from "./ContactDetail";
 import CarouselCardStory from "./CarouselCardStory";
 
 export default function HomePage() {
-  const [showText, setShowText] = useState(false);
-  const onClick = () => setShowText(true);
-  const Text = () => <div>You clicked the button!</div>;
+
   return (
     <>
       <div className="flex bg-zinc-100  ">
@@ -27,9 +24,6 @@ export default function HomePage() {
           </div>
           <div className="flex  flex-row bg-white rounded-b-lg ">
             <CarouselCardStory />
-            {/* {dataList.map((data) => {
-              return <CardImg name={data.name} img={data.img} />;
-            })} */}
           </div>
           <div className=" bg-white mt-4 rounded-lg p-4 ">
             <div className="flex flex-row grow  border-b-4 pb-6">
@@ -68,18 +62,12 @@ export default function HomePage() {
           </div>
         </div>
         <div className="flex grow basis-1/4 flex-col  justify-start   items-center ">
-          <ContactDetail /> 
-          <div className="avatar online ">
-            <div className="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-              <img src="https://i.pinimg.com/originals/6e/62/58/6e62587d5c63620ce8deaa448b30accf.jpg" />
-            </div>
-          </div>
-          <div className="avatar offline">
-            <div className="w-24 rounded-full">
-              <img src="https://i.pinimg.com/originals/6e/62/58/6e62587d5c63620ce8deaa448b30accf.jpg" />
-            </div>
-          </div>
+          <ContactDetail />
         </div>
+        <button title="ข้อความใหม่"
+          className="fixed z-90 bottom-10 right-8 bg-gray-400 w-14 h-14 rounded-full drop-shadow-lg flex justify-center items-center text-white text-4xl hover:bg-blue-700 hover:drop-shadow-2xl hover:animate-bounce duration-300">
+           <img className="w-12 h-12 p-3 " src="/assets/images/edit.png" />
+           </button>
       </div>
     </>
   );
