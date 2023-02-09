@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import ProfileDetail from "./ProfileDetail";
 import { tebsMenu, tebsMenuPost } from "@/models/Constant/TabsMene";
-import CardImg from "@/layouts/CardImg";
-import { dataList } from "@/models/Constant/StoryImages";
 import AvatarImg from "@/layouts/AvatarImg";
 import { UserProfile } from "@/models/Constant/ProfileDetailData";
 import TabsMenuBar from "@/layouts/TabsMenubar";
+import CarouselCardStory from "./CarouselCardStory";
 
 export default function HomePage() {
   const [showText, setShowText] = useState(false);
@@ -14,7 +13,7 @@ export default function HomePage() {
   return (
     <>
       <div className="flex bg-zinc-100  ">
-        <div className="flex grow basis-1/4  flex-row   items-center ml-4 mx-10 p-10 ">
+        <div className="flex grow basis-1/4  flex-row    ml-4 mx-10 py-4 ">
           <ProfileDetail />
         </div>
         <div className="flex grow flex-col basis-1/3  rounded-lg my-6 mx-10  drop-shadow-lg">
@@ -22,13 +21,13 @@ export default function HomePage() {
             {tebsMenu.map((data) => {
               return <TabsMenuBar name={data.name} img={data.icon} />;
             })}
-            
           </div>
-          {/* <div className="flex  flex-row bg-white rounded-b-lg ">
-            {dataList.map((data) => {
+          <div className="flex  flex-row bg-white rounded-b-lg ">
+            <CarouselCardStory />
+            {/* {dataList.map((data) => {
               return <CardImg name={data.name} img={data.img} />;
-            })}
-          </div> */}
+            })} */}
+          </div>
           <div className=" bg-white mt-4 rounded-lg p-4 ">
             <div className="flex flex-row grow  border-b-4 pb-6">
               {UserProfile.map((data) => {
@@ -65,7 +64,7 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-        <div className="flex grow basis-1/4 flex-col  justify-end   items-center "></div>
+        <div className="flex grow basis-1/4 flex-col    items-center "></div>
       </div>
     </>
   );

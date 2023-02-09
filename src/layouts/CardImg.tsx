@@ -8,8 +8,9 @@ interface Props {
 
 export default function CardImg({ name, img }: Props) {
   return (
-    <div>
-      <div
+    <div className="">
+
+      {/* <div
         className="hero rounded-md p-10 h-60 w-40 m-4 object-cover  "
         style={{
           backgroundImage: `url(${img})`,
@@ -28,7 +29,7 @@ export default function CardImg({ name, img }: Props) {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

@@ -12,7 +12,7 @@ export default function ProfileDetail() {
   const [isToggleds, setItToggleds] = useState(false);
 
   return (
-    <div className="grid  grid-flow-row auto-cols-max">
+    <div className="grid  grid-flow-row auto-cols-max content-start ">
       {profileDetail.map((data) => {
         return <ProfileUser name={data.name} img={data.img} />;
       })}
