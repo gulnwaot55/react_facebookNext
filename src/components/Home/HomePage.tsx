@@ -8,11 +8,10 @@ import ContactDetail from "./ContactDetail";
 import CarouselCardStory from "./CarouselCardStory";
 
 export default function HomePage() {
-
   return (
     <>
       <div className="flex bg-zinc-100  ">
-        <div className="flex grow basis-1/4  flex-row    ml-4 mx-10 py-4 ">
+        <div className="flex grow basis-1/4  flex-row    ml-4  py-4 ">
           <ProfileDetail />
         </div>
         <div className="flex grow flex-col basis-1/3  rounded-lg my-6 mx-10  drop-shadow-lg">
@@ -21,11 +20,11 @@ export default function HomePage() {
               return <TabsMenuBar name={data.name} img={data.icon} />;
             })}
           </div>
-          <div className=" flex  bg-white rounded-b-lg ">
+          <div className="  flex  basis-1/4 h-1/4 bg-white rounded-b-lg ">
             <CarouselCardStory />
           </div>
-          
-          <div className=" bg-white mt-4 rounded-lg p-4 ">
+
+          <div className=" bg-white mt-4  rounded-lg p-4 ">
             <div className="flex flex-row grow  border-b-4 pb-6">
               {UserProfile.map((data) => {
                 return <AvatarImg img={data.image} />;
@@ -64,10 +63,13 @@ export default function HomePage() {
         <div className="flex grow basis-1/4 flex-col  justify-start   items-center ">
           <ContactDetail />
         </div>
-        <button title="ข้อความใหม่"
-          className="fixed z-90 bottom-10 right-8 bg-gray-400 w-14 h-14 rounded-full drop-shadow-lg flex justify-center items-center text-white text-4xl hover:bg-blue-700 hover:drop-shadow-2xl hover:animate-bounce duration-300">
-           <img className="w-12 h-12 p-3 " src="/assets/images/edit.png" />
-           </button>
+
+        <button
+          title="ข้อความใหม่"
+          className="fixed z-90 bottom-10 right-8 bg-gray-400 w-14 h-14 rounded-full drop-shadow-lg flex justify-center items-center text-white text-4xl hover:bg-blue-700 hover:drop-shadow-2xl hover:animate-bounce duration-300"
+        >
+          <img className="w-12 h-12 p-3 " src="/assets/images/edit.png" />
+        </button>
       </div>
     </>
   );
