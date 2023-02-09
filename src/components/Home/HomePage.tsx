@@ -68,7 +68,17 @@ export default function HomePage() {
           </div>
         </div>
         <div className="flex grow basis-1/4 flex-col  justify-start   items-center ">
-          <ContactDetail />
+          <ContactDetail /> 
+          <div className="avatar online ">
+            <div className="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+              <img src="https://i.pinimg.com/originals/6e/62/58/6e62587d5c63620ce8deaa448b30accf.jpg" />
+            </div>
+          </div>
+          <div className="avatar offline">
+            <div className="w-24 rounded-full">
+              <img src="https://i.pinimg.com/originals/6e/62/58/6e62587d5c63620ce8deaa448b30accf.jpg" />
+            </div>
+          </div>
         </div>
       </div>
     </>
