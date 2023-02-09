@@ -25,12 +25,13 @@ export default function HomePage() {
               return <TabsMenuBar name={data.name} img={data.icon} />;
             })}
           </div>
-          <div className="flex  flex-row bg-white rounded-b-lg ">
+          <div className=" flex  bg-white rounded-b-lg ">
             <CarouselCardStory />
             {/* {dataList.map((data) => {
-              return <CardImg name={data.name} img={data.img} />;
+              return <CardImg name={data.name} img={data.img} items={data.items} />;
             })} */}
           </div>
+          
           <div className=" bg-white mt-4 rounded-lg p-4 ">
             <div className="flex flex-row grow  border-b-4 pb-6">
               {UserProfile.map((data) => {
