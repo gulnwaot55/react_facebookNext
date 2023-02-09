@@ -18,7 +18,7 @@ export default function ProfileDetail() {
 
 
   return (
-    <div className="grid  grid-flow-row auto-cols-max content-start ">
+    <div className="grid  grid-flow-row auto-cols-max content-start  ">
       {profileDetail.map((data) => {
         return <ProfileUser name={data.name} img={data.img} />;
       })}

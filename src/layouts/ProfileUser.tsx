@@ -8,7 +8,7 @@ interface Props {
 
 export default function ProfileUser({ name, img }: Props) {
   return (
-    <div className="hover:bg-slate-100 hover:rounded-lg py-1 ">
+    <div className="hover:bg-stone-200 hover:rounded-lg py-1 ">
       <div className="avatar ">
         <div className="w-9 h-9 rounded-full">
           <Image
