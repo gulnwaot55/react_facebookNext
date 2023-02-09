@@ -1,24 +1,20 @@
 
 import ProfileUser from "@/layouts/ProfileUser";
+import { profileDetailAll } from "@/models/Constant/ProfileDetailAll";
 import React from "react";
 
 
 
 
-export default function ProfileDetailHide() {
+export default function ProfileDetailAll() {
     return (
         <div className="ggrid grid-flow-col auto-cols-max ">
-            {profileDetailHide.map((data) => {
+            {profileDetailAll.map((data) => {
                 return <ProfileUser name={data.name} img={data.img} />;
             })}
         </div>
     );
 }
 
-const profileDetailHide = [
-    {
-        name: "ดูน้อยลง",
-        img: "/assets/images/up_arrow.png"
-    }
-];
+
 

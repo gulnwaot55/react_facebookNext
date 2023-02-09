@@ -1,9 +1,12 @@
 import React, { useState } from "react";
 import ProfileDetail from "./ProfileDetail";
 import { tebsMenu, tebsMenuPost } from "@/models/Constant/TabsMene";
-import AvatarImg from "@/layouts/AvatarImg";
+import CardImg from "@/layouts/CardImg";
+import { dataList } from "@/models/Constant/StoryImages";
 import { UserProfile } from "@/models/Constant/ProfileDetailData";
 import TabsMenuBar from "@/layouts/TabsMenubar";
+import AvatarImg from "@/layouts/AvatarImg";
+import ContactDetail from "../ContactDetail";
 import CarouselCardStory from "./CarouselCardStory";
 
 export default function HomePage() {
@@ -64,7 +67,9 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-        <div className="flex grow basis-1/4 flex-col    items-center "></div>
+        <div className="flex grow basis-1/4 flex-col  justify-start   items-center ">
+          <ContactDetail />
+        </div>
       </div>
     </>
   );
